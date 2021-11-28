@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    height: 60px;
+}
+.header-izq{
+    width: 20%;
+    padding: 0 20px;
+}
+.header-izq img{
+    height: 100%;
+}
+.menu-principal{
+    width: 80%;
+}
+.nav-principal{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+}
+ul{
+    list-style:none;
+}
+.nav-principal .segundo-nivel{
+    display: none;
+    position: absolute;
+    top: 70px;
+}
+.nav-principal .primer-nivel:hover > .segundo-nivel{
+    display: block
+}
