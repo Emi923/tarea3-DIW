@@ -9,10 +9,10 @@ header{
     display: flex;
     flex-direction: row;
     height: 60px;
+    padding: 0 60px;
 }
 .header-izq{
     width: 20%;
-    padding: 0 20px;
 }
 .header-izq img{
     height: 100%;
@@ -23,7 +23,7 @@ header{
 .nav-principal{
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
     height: 100%;
 }
@@ -33,13 +33,60 @@ ul{
 .nav-principal .segundo-nivel{
     display: none;
     position: absolute;
-    top: 70px;
+    background-color: black;
+    padding: 20px;
 }
 .nav-principal .primer-nivel:hover > .segundo-nivel{
+    display: block
+}
+.nav-principal .primer-nivel .segundo-nivel:hover{
     display: block
 }
 .nav-principal a{
     color: white;
     text-decoration: none;
-    font-weight: 600;
+}
+.nav-principal .segundo-nivel li{
+    margin-bottom: 15px;
+}
+.container-principal{
+    background: #f1f1f1;
+    display: flex;
+    flex-direction: row;
+    padding: 3% 25px;
+}
+.container-izquierda{
+    width: 70%;
+}
+.container-izquierda img{
+    width: 90%;
+}
+.container-derecha{
+    width: 30%;
+}
+.icono-estrella{
+    padding-right: 10px;
+}
+.icono-estrella svg{
+    width: 40px;
+}
+.leyenda{
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 30px;
+}
+.refugios h3{
+    color: #e74c3c;
+}
+.alimentacion h3{
+    color: #00FF00;
+}
+.ocio h3{
+    color: #0000FF;
+}
+.suministros h3{
+    color: #FF00FF;
+}
+.medicos h3{
+    color: #6A0888;
 }
